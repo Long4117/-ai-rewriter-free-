@@ -24,7 +24,7 @@
     <div class="result" id="result"></div>
   </div>
   <div class="tg">
-    Unlimited use & API Key → Telegram: <a href=" " target="_blank">long</a >
+    Unlimited use & API Key → Telegram: <a href=" " target="_blank">@long</a >
   </div>
 
   <script>
@@ -37,6 +37,8 @@
       let text = document.getElementById("input").value;
       if(!text) return alert("Enter text");
       document.getElementById("result").innerText = "Processing...";
+
+      // 你换成自己的LLM接口即可
       const res = await fetch("https://sk-04195b26a8b44ca9ae0b00b58d82f12e", {
         method:"POST",
         headers:{"Content-Type":"application/json"},
